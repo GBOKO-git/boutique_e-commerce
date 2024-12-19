@@ -19,7 +19,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-lg navbar-light bg-light h-auto fixed-top"
+        class="navbar navbar-expand-lg navbar-light bg-info h-auto fixed-top"
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">shoesIvoire</a>
@@ -64,7 +64,7 @@
 
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="#footer-text"
                       >Quelque chose d'autre ici</a
                     >
                   </li>
@@ -97,6 +97,14 @@
     </header>
 
     <main>
+      <section class="hero container p-3 text-center mt-5">
+        <h1 id="accueil" class="text-black">Bienvenue sur notre site!</h1>
+        <p>
+          Découvrez nos produits exceptionnels qui transformeront votre vie.
+        </p>
+        <a href="#produit" class="cta-button">Voir les Produits</a>
+      </section>
+
       <div>
         <div
           id="carouselExampleCaptions"
@@ -125,7 +133,7 @@
               aria-label="Slide 3"
             ></button>
           </div>
-          <div class="carousel-inner w-full">
+          <div class="carousel-inner w-full rounded">
             <div class="carousel-item active">
               <img
                 src="/images/berluti_noir.jpeg"
@@ -133,13 +141,15 @@
                 alt="..."
                 style="height: 800px; width: 100%"
               />
-              <div class="carousel-caption text-black">
-                <h5>berluti noir</h5>
+              <div class="carousel-caption">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Veritatis fuga nam autem animi voluptatibus laborum.
+                  <a href="#" class="btn btn-warning mt-3"
+                    >Details du produit</a
+                  >
                 </p>
-                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                <p class="img_text">
+                  Berluti noir Pour homme adulte, pointures : 40 41 42 43 !
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -150,12 +160,14 @@
                 style="height: 800px; width: 100%"
               />
               <div class="carousel-caption">
-                <h5>Always Dedicated</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Veritatis fuga nam autem animi voluptatibus laborum.
+                  <a href="#" class="btn btn-warning mt-3"
+                    >Details du produit</a
+                  >
                 </p>
-                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                <p class="img_text">
+                  Pantalon noir Pour homme adulte, pointures : 40 41 42 43 !
+                </p>
               </div>
             </div>
             <div class="carousel-item">
@@ -166,12 +178,14 @@
                 style="height: 800px; width: 100%"
               />
               <div class="carousel-caption">
-                <h5>True Construction</h5>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Veritatis fuga nam autem animi voluptatibus laborum.
+                  <a href="#" class="btn btn-warning mt-3"
+                    >Details du produit</a
+                  >
                 </p>
-                <p><a href="#" class="btn btn-warning mt-3">Learn More</a></p>
+                <p class="img_text">
+                  Vans blanc Pour homme adulte, pointures : 40 41 42 43 !
+                </p>
               </div>
             </div>
           </div>
@@ -201,16 +215,19 @@
             </h1>
           </div>
 
-          <div class="container text-center mt-3" style="gap: 10px">
-            <div class="row border border-warning rounded">
+          <div
+            class="container text-center mt-3 bg-light p-3 border border-warning rounded"
+            style="gap: 10px"
+          >
+            <div class="row">
               <div class="col-md-6 col-lg-4 col-xl-3 bg-light rounded p-3">
                 <img
                   src="./images/vansbleu.jpeg"
-                  class="rounded float"
+                  class="img-produit rounded float"
                   alt="..."
                   style="height: 300px; width: 290px"
                 />
-                <div class="p-3 border border-secondary border-top-0">
+                <div class="p-3 border rounded border-secondary border-top-0">
                   <h2>VANS</h2>
                   <p>
                     VANS BLEU <br />
@@ -233,11 +250,11 @@
               <div class="col-md-6 col-lg-4 col-xl-3 bg-light rounded p-3">
                 <img
                   src="./images/john bart.jpeg"
-                  class="rounded float"
+                  class="img-produit rounded float"
                   alt="..."
                   style="height: 300px; width: 290px"
                 />
-                <div class="p-3 border border-secondary border-top-0">
+                <div class="p-3 border rounded border-secondary border-top-0">
                   <h2>JOHN BART</h2>
                   <p>
                     JOHN BART EN CUIR GRIS <br />
@@ -260,11 +277,11 @@
               <div class="col-md-6 col-lg-4 col-xl-3 bg-light rounded p-3">
                 <img
                   src="./images/berluti_gris.jpeg"
-                  class="rounded float"
+                  class="img-produit rounded float"
                   alt="..."
                   style="height: 300px; width: 290px"
                 />
-                <div class="p-3 border border-secondary border-top-0">
+                <div class="p-3 border rounded border-secondary border-top-0">
                   <h2>BERLUTI</h2>
                   <p>
                     BERLUTI GRIS <br />
@@ -287,14 +304,14 @@
               <div class="col-md-6 col-lg-4 col-xl-3 bg-light rounded p-3">
                 <img
                   src="./images/AirMax.jpeg"
-                  class="rounded float"
+                  class="img-produit rounded float"
                   alt="..."
                   style="height: 300px; width: 290px"
                 />
-                <div class="p-3 border border-secondary border-top-0">
-                  <h2>Air Max</h2>
+                <div class="p-3 border rounded border-secondary border-top-0">
+                  <h2>Air Force</h2>
                   <p>
-                    NIKE AIR MAX blanc <br />
+                    NIKE AIR FORCE blanc <br />
                     Pour adulte ! <br />
                     Pointures: 40 41 42 43
                   </p>
@@ -316,14 +333,26 @@
       </div>
     </main>
 
-    <footer class="text-center p-3">
+    <footer id="footer-text" class="text-center p-3 bg-info">
       <p>AzoumServ.com</p>
+      <div class="text-footer p-1 d-flex justify-content-around">
+        <p>© Copyright 2024</p>
+        <p>|</p>
+        <p>Amara Ggboko Azoumanan</p>
+        <p>|</p>
+
+        <p>Tout droit reservé</p>
+        <button
+          class="btn border border-success rounded px-3 bg-lightblue buy-now"
+        >
+          <a href="#accueil">Accueil</a>
+        </button>
+      </div>
       <p>
-        © Copyright 2023 | Amara Ggboko Azoumanan | Je ne dispose aucun droit
-        sur le logo et les image de Air cote d'Ivoire.
-      </p>
-      <!--space-x-6  text-teal-700
+        <!--space-x-6  text-teal-700
         object-cover-->
+      </p>
+
       <div class="medias d-flex justify-content-center" style="gap: 15px">
         <a href="#" aria-label="Twitter">
           <img
